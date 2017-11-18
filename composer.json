@@ -1,0 +1,47 @@
+{
+    "name": "ellipse/cookie-encryption",
+    "type": "library",
+    "description": "Psr-15 middleware allowing to encrypt cookies using defuse/php-encryption",
+    "keywords": [
+        "psr-15",
+        "psr-7",
+        "middleware",
+        "cookie",
+        "encryption"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/ellipsephp/cookie-encryption",
+    "support": {
+        "issues": "https://github.com/ellipsephp/cookie-encryption/issues",
+        "source": "https://github.com/ellipsephp/cookie-encryption"
+    },
+    "authors": [
+        {
+            "name": "pmall",
+            "email": "pierre.mallinjoud@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "psr/http-message": "^1.0",
+        "http-interop/http-server-handler": "^1.0",
+        "http-interop/http-server-middleware": "^1.0",
+        "dflydev/fig-cookies": "^1.0",
+        "defuse/php-encryption": "^2.1"
+    },
+    "require-dev": {
+        "kahlan/kahlan": "^4.0",
+        "eloquent/phony-kahlan": "^1.0",
+        "zendframework/zend-diactoros": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ellipse\\Cookies\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
