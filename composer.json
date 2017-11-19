@@ -38,10 +38,5 @@
         "psr-4": {
             "Ellipse\\Cookies\\": "src"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
     }
 }
