@@ -8,11 +8,11 @@ This package provides a Psr-15 middleware allowing to encrypt cookies using [def
 
 **Run tests** `./vendor/bin/kahlan`
 
-- [Using the encrypt cookies middleware](#using-the-encrypt-cookies-middleware)
+- [Getting started](#getting-started)
 
-# Using the encrypt cookies middleware
+# Getting started
 
-This middleware takes a [defuse/php-encryption](https://github.com/defuse/php-encryption) and an array of cookie names as parameters. It will use defuse encryption mechanism to decrypt the cookies attached to the Psr-7 request and encrypt the cookies attached to the Psr-7 response. The cookies with a name in the bypassed array will stay untouched. When the decryption fails for one cookie, its value is set as an empty string.
+This middleware takes an instance of `Defuse\Crypto\Key` from the [defuse/php-encryption](https://github.com/defuse/php-encryption) package and an array of bypassed cookie names as parameters. It will use defuse encryption mechanism to decrypt the cookies attached to the Psr-7 request and encrypt the cookies attached to the Psr-7 response. The cookies with a name in the bypassed array will stay untouched. When the decryption fails for one cookie, its value is set as an empty string.
 
 ```php
 <?php
