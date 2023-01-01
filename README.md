@@ -2,7 +2,7 @@
 
 This package provides a [Psr-15 middleware](https://www.php-fig.org/psr/psr-15/) allowing to encrypt cookies using [defuse/php-encryption](https://github.com/defuse/php-encryption).
 
-**Require** php >= 7.1
+**Require** php >= 7.3
 
 **Installation** `composer require ellipse/cookie-encryption`
 

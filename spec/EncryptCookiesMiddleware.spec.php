@@ -10,7 +10,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 use Defuse\Crypto\Key;
 use Defuse\Crypto\Crypto;
 
-use Zend\Diactoros\Response\TextResponse;
+use Laminas\Diactoros\Response\TextResponse;
 
 use Ellipse\Cookies\EncryptCookiesMiddleware;
 
